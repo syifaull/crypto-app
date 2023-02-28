@@ -8,10 +8,10 @@ const Navbar = () => {
       <nav className="w-full bg-white shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:py-7 md:block">
               <Link href="#">
                 <img
-                  className="h-5 "
+                  className="h-6 "
                   src="https://financer.com/app/uploads/sites/28/2021/07/logo-pintu.png"
                   alt="Logo Pintu"
                 />
@@ -60,7 +60,7 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-20 md:space-y-0">
                 <li className="text-[#0B0A21] hover:text-[#B6B4B4]">
                   <a href="#">Fitur</a>
                 </li>
@@ -79,26 +79,19 @@ const Navbar = () => {
                 <li className="text-[#0B0A21] hover:text-[#B6B4B4]">
                   <a href="#">Karier</a>
                 </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/bendera-merah-putih-png/classic-bendera-indonesia-merah-putih-download-png-30.png"
+                      className="w-8 shadow"
+                    ></img>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        </div>
-      </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-          </div>
-          {/* <!-- /End replace --> */}
-        </div>
-      </main>
     </div>
   );
 };
