@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Search from "../components/search";
+import Sort from "../components/sort";
 
 export default function Home() {
   return (
@@ -18,6 +19,12 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      {/* sort */}
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <Sort />
+      </div>
+
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* <!-- Replace with your content --> */}
